@@ -1,0 +1,17 @@
+version: '2'
+services:
+  library:
+    image: agileek/ionic-framework
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node_modules/.bin/nodemon --exec npm start
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8100:8100
+      - 35729:35729
+    volumes:
+     - .:/myApp:rw
+     - /dev/bus/usb:/dev/bus/usb
+     - /home/app/library/node_modules
