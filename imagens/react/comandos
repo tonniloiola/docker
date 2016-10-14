@@ -1,0 +1,5 @@
+docker run -p 3000:3000 -v /home/tonni/Documentos/estudos/docker/imagens/react/myapp:/tmp/myapp node/react bash
+
+
+docker run -p 3000:3000 -d node/react
+

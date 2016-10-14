@@ -3,4 +3,4 @@ react:
   ports:
     - 3000:3000
   volumes:
-    - ./myapp:/tmp/myapp
+    - /home/tonni/Documentos/estudos/docker/imagens/react/myapp:/tmp/myapp
